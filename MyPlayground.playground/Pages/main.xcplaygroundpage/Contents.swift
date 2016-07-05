@@ -15,6 +15,8 @@
 ### 1. Create a variable which represents your bank account balance. (For example: What is a good name for this variable that makes it easily readable for myself now and for the future me _or_ other developers I might be working with? Should I declare it using `let` or `var`? Should it be of type `Int` or `String`?)
 */
 // write your code here
+// The is bank account balance variable should be a variable because the money can fluctuate. I should also be of type Int.
+var bankAccountBalance = 4000
 
 
 
@@ -24,13 +26,15 @@
 */
 // write your code here
 
-
+// Since we want our puppy's name to always remain the same, then we declare the name as constant.
+let puppyName = "Bella"
 
 
 /*: question3
 ### 3. Use the `print()` function to print the name of your new puppy to the console.
 */
 // write your code here
+print(puppyName)
 
 
 
@@ -39,7 +43,7 @@
 ### 4. Use the `print()` function to print the sentence "I just got a new puppy named <your puppy's name> and she is awesome!" to the console.
 */
 // write your code here
-
+print("I just got a new puppy named \(puppyName) and she is awesome!")
 
 
 
@@ -47,7 +51,7 @@
 ### 5. Use the `print()` function to print the sentence "I have $<balance> in my bank account." to the console.
 */
 // write your code here
-
+print("I have $\(bankAccountBalance) in my bank account.")
 
 
 
@@ -55,7 +59,7 @@
 ### 6. Congratulations! You just got $100 for your birthday, so now you have $100 more in your bank account. Update your bank account with the new balance and print "I now have $<balance>." to the console.
 */
 // write your code here
-
+print("I now have \(bankAccountBalance + 100).")
 
 
 
@@ -63,7 +67,9 @@
 ### 7. You decided you don't like the name Bella. Change your puppy's name to something else. (Can you do this? What happens when you try? Why?)
 */
 // write your code here
-
+// We cannot change the original puppy's name because we declared it as a constant; however, we can copy its name into a variable and change the copied variable's name. Being new to Swift, I am not sure if this is good practice though.
+var newPuppyName = puppyName
+newPuppyName = "Lannister"
 
 
 
